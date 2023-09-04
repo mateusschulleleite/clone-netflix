@@ -1,0 +1,40 @@
+.container__cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 60px;
+    background-color: #141414;
+    font-family: NetflixSans-Medium;
+    font-size: 0.875rem;
+}
+
+.container__cabecalho__esquerdo {
+    display: flex;
+    gap: 50px;
+}
+
+.container__cabecalho__esquerdo img {
+    width: 111px;
+}
+
+.container__cabecalho__esquerdo-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #e5e5e5;
+}
+
+.menu-item-selecionado {
+    font-family: NetflixSans-Black;
+    color: #FFF;
+}
+
+.container__cabecalho__direito {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.container__cabecalho__direito p {
+    color: #FFF;
+}
