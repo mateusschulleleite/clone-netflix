@@ -38,3 +38,9 @@
 .container__cabecalho__direito p {
     color: #FFF;
 }
+
+.container__cabecalho__direito-perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
