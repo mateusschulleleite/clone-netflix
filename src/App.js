@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import HighlightedMovie from "./components/HighlightedMovie";
+import KeepWatching from "./components/KeepWatching";
 import PopularOnNetflix from "./components/PopularOnNetflix";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <HighlightedMovie />
       <PopularOnNetflix />
+      <KeepWatching />
     </div>
   );
 }

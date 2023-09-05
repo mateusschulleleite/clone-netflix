@@ -26,19 +26,19 @@ export default function PopularOnNetflix() {
         autoplay={{ delay: 3000 }}
       >
         <SwiperSlide>
-            <img src={posterPrimeiro} />
+            <img className="slide-imagem" src={posterPrimeiro} />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={posterSegundo} />
+            <img className="slide-imagem" src={posterSegundo} />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={posterTerceiro} />
+            <img className="slide-imagem" src={posterTerceiro} />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={posterQuarto} />
+            <img className="slide-imagem" src={posterQuarto} />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={posterQuinto} />
+            <img className="slide-imagem" src={posterQuinto} />
         </SwiperSlide>
       </Swiper>
     </section>

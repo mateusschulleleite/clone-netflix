@@ -1,6 +1,7 @@
 .container__filme-destaque {
     position: relative;
     color: #FFF;
+    background-color: #141414ff;
 }
 .container__filme-destaque__imagem {
     width: 100%;

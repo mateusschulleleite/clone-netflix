@@ -3,7 +3,6 @@
     flex-direction: column;
     gap: 10px;
     position: absolute;
-    width: fit-content;
     transform: translateY(-100%);
     left: 60px;
 }
@@ -16,7 +15,7 @@
   line-height: 33.2px;
 }
 
-.swiper-slide img {
+.slide-imagem {
   width: 285px;
   height: auto;
   margin-right: 5px;
