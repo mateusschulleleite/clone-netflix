@@ -61,3 +61,8 @@ table {
     font-family: NetflixSans-Regular;
     src: url(./assets/fonts/NetflixSans-Regular.otf);
 }
+
+.swiper {
+    margin-left: 0px !important;
+    margin-right: 0px;
+}
