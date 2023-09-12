@@ -7,6 +7,18 @@ import headerImageProfile from '../../assets/images/ProfileIMG.svg';
 import headerImageProfileArrow from '../../assets/images/HeaderProfileSeta.svg';
 
 export default function Header() {
+
+  window.addEventListener('scroll', () => {
+    let scrollPosition = window.scrollY;
+    let containerHeader = document.querySelector('.container__cabecalho')
+    if(scrollPosition >= 60) {
+      containerHeader.classList.add('header__background');
+    } else {
+      containerHeader.classList.remove('header__background');
+    }
+
+  })
+
   return (
     <header className="container__cabecalho">
         <div className="container__cabecalho__esquerdo">

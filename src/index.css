@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
+    background-color: #141414ff;
 }
 
 ol, ul {
@@ -62,7 +63,27 @@ table {
     src: url(./assets/fonts/NetflixSans-Regular.otf);
 }
 
-.swiper {
-    margin-left: 0px !important;
-    margin-right: 0px;
+/* main {
+    width: 100%;
+    position: absolute;
+    transform: translateY(-43.7%);
+} */
+
+@media screen and (max-width: 1439px) {
+    body {
+        display: block;
+    }
+}
+
+.swiper-slide {
+    width: auto !important;
+}
+
+.swiper-button-next::after{
+    content: url('./assets/images/Vector.svg') !important;
+}
+
+.swiper-button-prev::after{
+    content: url('./assets/images/Vector.svg') !important;
+    transform: rotate(180deg);
 }

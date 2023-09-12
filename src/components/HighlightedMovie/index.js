@@ -1,8 +1,16 @@
 import React from "react";
 import "./HighlightedMovie.css";
+import botaoPlay from './botao-play.svg';
+import botaoMaisInformacoes from './botao-mais-informacoes.svg';
 import fimePoster from "../../assets/images/HighlightedMovie/MoviePoster.png";
 import filmeTítulo from "../../assets/images/HighlightedMovie/MovieName.svg";
-import top10Badge from '../../assets/images/HighlightedMovie/Top10Badge.svg';
+import top10Badge from "../../assets/images/HighlightedMovie/Top10Badge.svg";
+import Carroussel from "../Carroussel/Carroussel";
+
+import moviePoster from "../../assets/images/PopularOnNetflix/MoviePoster.png";
+import moviePoster1 from "../../assets/images/PopularOnNetflix/MoviePoster (1).png";
+import moviePoster2 from "../../assets/images/PopularOnNetflix/MoviePoster (2).png";
+import moviePoster3 from "../../assets/images/PopularOnNetflix/MoviePoster (3).png";
 
 export default function HighlightedMovie() {
   return (
@@ -23,6 +31,10 @@ export default function HighlightedMovie() {
           e alcançou uma posição importante no mundo dos negócios, um dia
           conhece uma garota que é cantora de rua e sua vida muda.
         </p>
+        <div className="container__filme__destaque__botoes">
+          <button><img src={botaoPlay} />Iniciar</button>
+          <button className="container__filme__destaque__botoes__maisInformacoes"><img src={botaoMaisInformacoes} />Mais Informações</button>
+        </div>
       </div>
     </section>
   );

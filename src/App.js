@@ -1,16 +1,14 @@
-import Header from "./components/Header";
-import HighlightedMovie from "./components/HighlightedMovie";
-import KeepWatching from "./components/KeepWatching";
-import PopularOnNetflix from "./components/PopularOnNetflix";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Browser from './components/pages/Browser';
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <HighlightedMovie />
-      <PopularOnNetflix />
-      <KeepWatching />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/browser" element={<Browser />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

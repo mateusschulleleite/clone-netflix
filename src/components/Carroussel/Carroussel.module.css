@@ -1,0 +1,30 @@
+.container__carroussel {
+    padding-bottom: 30px;
+    padding-left: 60px;
+}
+
+.titulo {
+    font-family: NetflixSans-Medium;
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 33.2px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.container__carroussel__slide__tempo {
+    width: 175px;
+    height: 3px;
+    background-color: #6D6D6EB2;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.container__carroussel__slide__tempo span {
+    position: absolute;
+    background-color: #B9090B;
+    z-index: 1;
+    width: 20%;
+    height: 3px;
+}

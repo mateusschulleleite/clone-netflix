@@ -1,0 +1,74 @@
+.container__browser {
+  position: relative;
+  height: 100vh;
+}
+
+.container__browser header {
+  padding: 25px 60px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.container__browser header h1 img {
+  width: 111px;
+}
+
+.container__browser main {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container__browser main h2 {
+  font-family: NetflixSans-Regular;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 82px;
+  text-align: center;
+  color: #fff;
+}
+
+.container__browser main div {
+  padding: 30px;
+}
+
+.container__browser main div ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.container__browser main div ul li img {
+  width: 200px;
+}
+
+.container__browser main div ul li p {
+  font-family: NetflixSans-Regular;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 33px;
+  text-align: center;
+  color: #6d6d6eb2;
+  margin-top: 20px;
+}
+
+.container__browser main button {
+  width: max-content;
+  margin: 0 auto;
+  background: none;
+  border: solid 1px #808080;
+  padding: 10px 30px;
+  font-family: NetflixSans-Regular;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #808080;
+  margin-top: 40px;
+}
