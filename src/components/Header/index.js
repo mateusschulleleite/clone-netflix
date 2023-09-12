@@ -6,7 +6,7 @@ import headerSino from '../../assets/images/HeaderSino.svg';
 import headerImageProfile from '../../assets/images/ProfileIMG.svg';
 import headerImageProfileArrow from '../../assets/images/HeaderProfileSeta.svg';
 
-export default function Header() {
+export default function Header(props) {
 
   window.addEventListener('scroll', () => {
     let scrollPosition = window.scrollY;
@@ -33,10 +33,10 @@ export default function Header() {
         </div>
         <div className="container__cabecalho__direito">
           <img src={headerLupa} alt="Lupa de pesquisa"/>
-          <p>Usuário</p>
+          <p>{props.nomeUsuario}</p>
           <img src={headerSino} alt="Sino de notificações" />
           <div className="container__cabecalho__direito-perfil">
-            <img src={headerImageProfile} alt="Imagem do perfil" />
+            <img className='container__cabecalho__direito-perfil__imagem-do-perfil' src={props.imagemUsuario} alt="Imagem do perfil" />
             <img src={headerImageProfileArrow} alt="Seta do perfil"/>
           </div>
         </div>

@@ -5,12 +5,6 @@ import botaoMaisInformacoes from './botao-mais-informacoes.svg';
 import fimePoster from "../../assets/images/HighlightedMovie/MoviePoster.png";
 import filmeTítulo from "../../assets/images/HighlightedMovie/MovieName.svg";
 import top10Badge from "../../assets/images/HighlightedMovie/Top10Badge.svg";
-import Carroussel from "../Carroussel/Carroussel";
-
-import moviePoster from "../../assets/images/PopularOnNetflix/MoviePoster.png";
-import moviePoster1 from "../../assets/images/PopularOnNetflix/MoviePoster (1).png";
-import moviePoster2 from "../../assets/images/PopularOnNetflix/MoviePoster (2).png";
-import moviePoster3 from "../../assets/images/PopularOnNetflix/MoviePoster (3).png";
 
 export default function HighlightedMovie() {
   return (

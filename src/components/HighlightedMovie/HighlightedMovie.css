@@ -9,7 +9,7 @@
 
 .container__filme-destaque__informacoes {
     position: absolute;
-    top: 140px;
+    bottom: 70px;
     left: 60px;
     width: 636px;
     display: flex;
@@ -28,7 +28,7 @@
 
 .container__filme-destaque__descricao {
     font-family: NetflixSans-Regular;
-    font-size: 1.625rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 33.2px;
 }

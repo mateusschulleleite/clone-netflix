@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Browser.module.css";
 import netflixLogo from "../../../assets/images/NetflixLogo.svg";
+import { useNavigate } from "react-router-dom";
 
 import profilePicture1 from "../../../assets/images/ProfilePictures/ProfilePicture-1.svg";
 import profilePicture2 from "../../../assets/images/ProfilePictures/ProfilePicture-2.svg";
@@ -8,7 +9,34 @@ import profilePicture3 from "../../../assets/images/ProfilePictures/ProfilePictu
 import profilePicture4 from "../../../assets/images/ProfilePictures/ProfilePicture-4.svg";
 import addProfile from "../../../assets/images/ProfilePictures/ProfilePicture.svg";
 
+
 export default function Browser() {
+
+  const navigate = useNavigate();
+
+  const profiles = {
+    profile1: {
+      nome: "Sofia",
+      img: profilePicture1
+    },
+    profile2: {
+      nome: "Lucas",
+      img: profilePicture2
+    },
+    profile3: {
+      nome: "Isabella",
+      img: profilePicture3
+    },
+    profile4: {
+      nome: "Mateo",
+      img: profilePicture4
+    }
+  }
+
+  function teste(profile) {
+    navigate(`/home`, { state: { profile } });
+  }
+
   return (
     <section className={styles.container__browser}>
       <header>
@@ -20,10 +48,12 @@ export default function Browser() {
             <h2>Quem está assistindo?</h2>
             <div>
                 <ul>
-                    <li><img src={profilePicture1} alt='' /><p>Sofia</p></li>
-                    <li><img src={profilePicture2} alt='' /><p>Lucas</p></li>
-                    <li><img src={profilePicture3} alt='' /><p>Isabella</p></li>
-                    <li><img src={profilePicture4} alt='' /><p>Mateo</p></li>
+                    {Object.keys(profiles).map(profileKey => {
+                       const profile = profiles[profileKey];
+                      return (
+                        <li onClick={() => teste(profile)} key={profileKey}><img src={profile.img} alt='' /><p>{profile.nome}</p></li>
+                      )
+                    })}
                     <li><img src={addProfile} alt='' /><p>Adicionar Perfil</p></li>
                 </ul>
             </div>

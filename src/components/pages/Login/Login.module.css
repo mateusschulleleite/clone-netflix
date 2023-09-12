@@ -1,0 +1,142 @@
+.container__login {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container__login__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.container__login__background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+.container__login header {
+    padding: 20px 4%;
+}
+
+.container__login__background img {
+    width: 100%;
+    height: 100%;
+}
+
+.container__login header img {
+    width: 167px;
+}
+
+.container__login form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #060804d8;
+    width: 300px;
+    padding: 60px 68px 40px;
+    border-radius: 5px;
+}
+
+.container__login form h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 28px;
+    color: #FFF;
+    font-family: NetflixSans-Medium;
+}
+
+.container__login form input {
+    background-color: #333333ff;
+    border: none;
+    padding: 16px 20px;
+    border-radius: 6px;
+    color: #FFF;
+}
+
+.container__login form span {
+    color: #e87c03;
+    font-size: 0.8125rem;
+    font-family: NetflixSans-Regular;
+    margin: 8px 0 15px 0;
+    opacity: 0;
+}
+
+.span__opacity {
+    opacity: 1 !important;
+}
+
+.container__login input::placeholder {
+    font-family: NetflixSans-Regular;
+    font-size: 1rem;
+}
+
+.container__login form button{
+    color: #FFF;
+    background-color: #e50914ff;
+    border: none;
+    padding: 16px;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-top: 20px;
+    font-family: NetflixSans-Medium;
+    cursor: pointer;
+}
+
+.input__border {
+    border-bottom: 2px solid #e87c03 !important;
+}
+
+.container__login__formulario__salvarDados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    color: #b3b3b3;
+    font-family: NetflixSans-Regular;
+    font-size: 0.8125rem;
+}
+
+.container__login__formulario__salvarDados fieldset {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.container__login__formulario__salvarDados fieldset input {
+    margin: 0;
+    width: 15px;
+    height: 15px;
+}
+
+.container__login__formulario__salvarDados a {
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+.container__login__formulario__informacoes {
+    color: #b3b3b3;
+    margin-top: 100px;
+    box-sizing: border-box;
+    font-family: NetflixSans-Regular;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.container__login__informacoes_inscrever {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.container__login__informacoes_inscrever a {
+    text-decoration: none;
+    color: #FFF;
+}
