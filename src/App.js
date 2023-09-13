@@ -3,8 +3,8 @@ import Browser from './components/pages/Browser';
 import Home from './components/pages/Home';
 import Login from './components/pages/Login';
 
-
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>

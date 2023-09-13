@@ -51,7 +51,7 @@ export default function Browser() {
                     {Object.keys(profiles).map(profileKey => {
                        const profile = profiles[profileKey];
                       return (
-                        <li onClick={() => teste(profile)} key={profileKey}><img src={profile.img} alt='' /><p>{profile.nome}</p></li>
+                        <li key={profileKey} onClick={() => teste(profile)}><img src={profile.img} alt='' /><p>{profile.nome}</p></li>
                       )
                     })}
                     <li><img src={addProfile} alt='' /><p>Adicionar Perfil</p></li>

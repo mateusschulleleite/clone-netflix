@@ -1,6 +1,7 @@
 .container__login {
     box-sizing: border-box;
     position: relative;
+    height: fit-content;
 }
 
 .container__login__background {
@@ -139,4 +140,10 @@
 .container__login__informacoes_inscrever a {
     text-decoration: none;
     color: #FFF;
+}
+
+@media screen and (min-width: 1920px) {
+    .container__login {
+        height: 100vh;
+    }
 }
